@@ -7,7 +7,7 @@
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/calendar-app-e2e/cypress.json",
+        "cypressConfig": "apps/calendar-app-e2e/cypress.config.js",
         "devServerTarget": "calendar-app:serve"
       },
       "configurations": {
