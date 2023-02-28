@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "projects": {
-    "calendar-app": "apps/calendar-app",
-    "calendar-app-e2e": "apps/calendar-app-e2e"
-  }
-}

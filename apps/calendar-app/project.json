@@ -1,5 +1,6 @@
 {
-  "root": "apps/calendar-app",
+  "name": "calendar-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/calendar-app/src",
   "projectType": "application",
   "targets": {
@@ -41,7 +42,7 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/web:dev-server",
+      "executor": "@nrwl/webpack:dev-server",
       "options": {
         "buildTarget": "calendar-app:build",
         "hmr": true
