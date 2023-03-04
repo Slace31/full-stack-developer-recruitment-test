@@ -1,0 +1,24 @@
+.container {
+  width: calc(10% - 2px);
+  padding-bottom: calc(10% - 2px);
+  position: relative;
+  border: solid 1px #7562d9;
+  background-color: transparent;
+  color: black;
+  transition: all linear .2s;
+  margin: 1px;
+  &:hover {
+    background-color: #7562d9;
+    color: white;
+  }
+}
+
+.text {
+  transition: all linear .2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+}

@@ -1,0 +1,43 @@
+.container {
+  margin: 1px;
+  display: flex;
+  padding: 25px 0;
+  flex-direction: column;
+  border: solid 1px #7562d9;
+  background-color: transparent;
+  color: black;
+  transition: all linear .2s;
+  align-items: center;
+  flex: 1;
+
+  &:hover {
+    background-color: #7562d9;
+    color: white;
+  }
+}
+
+.isSelected {
+  background-color: #7562d9;
+  color: white;
+}
+
+.day {
+  font-size: 1.2em;
+}
+
+.date {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.month {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.year {
+  font-size: 1em;
+  font-weight: bold;
+}

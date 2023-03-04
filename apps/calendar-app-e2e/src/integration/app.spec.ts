@@ -1,13 +1,8 @@
-import { getGreeting } from '../support/app.po';
-
 describe('calendar-app', () => {
   beforeEach(() => cy.visit('/'));
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
-
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome calendar-app');
+  it('should display the datepicker', () => {
+    cy.get('h2').contains('Calendar')
+    cy.get('h2').contains('Available Time Slots')
   });
 });
