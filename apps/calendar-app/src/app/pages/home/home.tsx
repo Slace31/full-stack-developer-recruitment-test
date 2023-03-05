@@ -7,7 +7,7 @@ function Home() {
   const [selectedDate, setSelectedDate] = useState(new Date('2021-04-10'))
   const [availableTimeSlots, setAvailableTimeSlots] = useState([])
 
-  const getData=()=>{
+  useEffect(()=>{
     fetch('assets/calendar.json'
       ,{
         headers : {
@@ -22,10 +22,6 @@ function Home() {
       .then(function(jsonData) {
         setAvailableTimeSlots((jsonData[format(selectedDate, 'yyyy-MM-dd')] || []).map((e: { slotStartTime: number }) => e.slotStartTime))
       });
-  }
-
-  useEffect(()=>{
-    getData()
   },[selectedDate])
 
   return (
