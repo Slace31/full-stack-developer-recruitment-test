@@ -17,9 +17,6 @@
     "paths": {
       "@full-stack-developer-recruitment-test/calendar": [
         "libs/calendar/src/index.ts"
-      ],
-      "@full-stack-developer-recruitment-test/selectable-card-list": [
-        "libs/selectable-card-list/src/index.ts"
       ]
     }
   },
